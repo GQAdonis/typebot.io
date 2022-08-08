@@ -1,4 +1,3 @@
-import { FlexProps } from '@chakra-ui/layout'
 import prettier from 'prettier/standalone'
 import parserHtml from 'prettier/parser-html'
 import { BubbleParams } from 'typebot-js'
@@ -6,6 +5,7 @@ import { parseInitBubbleCode, typebotJsHtml } from '../params'
 import { useTypebot } from 'contexts/TypebotContext'
 import { CodeEditor } from 'components/shared/CodeEditor'
 import { env, isEmpty } from 'utils'
+import { FlexProps } from '@chakra-ui/react'
 
 type ChatEmbedCodeProps = {
   withStarterVariables?: boolean

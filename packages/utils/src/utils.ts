@@ -263,3 +263,6 @@ export const hasValue = (
   value !== '' &&
   value !== 'undefined' &&
   value !== 'null'
+
+export const getViewerUrl = () =>
+  env('VIEWER_URL')?.split(',')[0] ?? process.env.NEXT_PUBLIC_VERCEL_URL
